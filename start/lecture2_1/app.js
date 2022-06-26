@@ -1,0 +1,22 @@
+import * as THREE from '../../libs/three/three.module.js';
+import { OrbitControls } from '../../libs/three/jsm/OrbitControls.js';
+
+class App{
+	constructor(){
+		const container = document.createElement( 'div' );
+		document.body.appendChild( container );
+    
+        window.addEventListener('resize', this.resize );
+        // window.addEventListener('resize', this.resize.bind(this) );
+	}	
+    
+    resize(){
+        console.log('12121', this);
+    }
+    
+	render( ) {   
+        
+    }
+}
+
+export { App };
